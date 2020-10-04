@@ -10,7 +10,7 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 const auth = require('./controllers/authorization');
 
-//Database Setup
+//Database Setup - add your own information here based on the DB you created
 const db = knex({
   client: 'pg',
   connection: {
