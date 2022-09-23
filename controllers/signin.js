@@ -10,10 +10,10 @@ const redisClient = redis.createClient({
 
 // New for Redis v4+
 // Read the migration guide here: https://github.com/redis/node-redis/blob/HEAD/docs/v3-to-v4.md
-async function residConnect() {
+async function redisConnect() {
  return await redisClient.connect();
 }
-residConnect()
+redisConnect()
 
 const signToken = (username) => {
   const jwtPayload = { username };
