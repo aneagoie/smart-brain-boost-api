@@ -9,7 +9,7 @@ const requireAuth = (req, res, next) => {
     if (err || !reply) {
       return res.status(401).send('Unauthorized');
     }
-    return next();
+    return next(); 
   });
 };
 
